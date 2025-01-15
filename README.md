@@ -1,2 +1,3 @@
-# booki-starter-pack
-#test
+# Ajout de VITE
+
+`npm install`
