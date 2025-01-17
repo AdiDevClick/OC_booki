@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -18,12 +19,10 @@
     <div class="main-container">
         <header class="header-menu">
             <nav>
+                <img class="header-menu__logo" src="./images/logo/Booki.png" alt="" srcset="">
                 <ul class="header-menu__links">
                     <li>
-                        <img class="header-menu__logo" src="./images/logo/Booki.png" alt="" srcset="">
-                    </li>
-                    <li>
-                        <a href="#hebergements-and-populaires">Hébergement</a>
+                        <a href="#hebergements-and-populaires">Hébergements</a>
                     </li>
                     <li>
                         <a href="#activites">Activités</a>
@@ -33,47 +32,62 @@
         </header>
         <main>
             <section class="search">
-                <div class="card-txt">
-                    <h1 class="card-title">Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p class="card-subtitle">En plein centre-ville ou en pleine nature</p>
+                <div class="search__title">
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre-ville ou en pleine nature</p>
                 </div>
                 <form class="search__form" action="" method="get">
                     <div class="form__input">
                         <div class="input__icon">
                             <i class="fa-solid fa-location-dot"></i>
                         </div>
-                        <label for="search-form"></label>
-                        <input id="search-form" name="search-form" type="text" class="search">
+                        <label for="search-form">Rechercher</label>
+                        <input id="search-form" name="search-form" type="text" class="search"
+                            placeholder="Marseille, France">
                         <button type="submit">Rechercher</button>
-                    </div>
-                    <div class="search__filters">
-                        <div class="search__filters-title">
-                            <h2 class="section-title">Filtres</h2>
-                        </div>
-                        <ul class="filters__list">
-                            <li>
-                                <i class="fa-solid fa-money-bill-wave"></i>
-                                <button type="button">Economique</button>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-person"></i>
-                                <button type="button">Familial</button>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-heart"></i>
-                                <button type="button">Romantique</button>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-fire"></i>
-                                <button type="button">Nos pépites</button>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-info"></i>
-                        <p>Plus de <span>500</span> logements sont disponibles dans cette ville</p>
+                        <button class="search-icon" type="submit">
+                            <i class="fa-solid fa-magnifying-glass">
+                            </i>
+                        </button>
                     </div>
                 </form>
+                <div class="search__filters">
+                    <div class="search__filters-title">
+                        <h2 class="section-title">Filtres</h2>
+                    </div>
+                    <ul class="filters__list">
+                        <li>
+                            <button type="button">
+                                <i class="fa-solid fa-money-bill-wave"></i>
+                                Economique
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <i class="fa-solid fa-person"></i>
+                                Familial
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <i class="fa-solid fa-heart"></i>
+                                Romantique
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <i class="fa-solid fa-fire"></i>
+                                Nos pépites
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search__info">
+                    <div class="info-circle">
+                        <i class="fa-solid fa-info fa-2xs"></i>
+                    </div>
+                    <p>Plus de <span>500</span> logements sont disponibles dans cette ville</p>
+                </div>
             </section>
             <div id="hebergements-and-populaires" class="hebergements-and-populaires">
                 <section class="hebergements">
@@ -276,7 +290,7 @@
 
             <section id="activites" class="activites">
                 <div class="activites__title">
-                    <h3 class="section-title">Activités à Marseille</h3>
+                    <h2 class="section-title">Activités à Marseille</h2>
                 </div>
                 <div class="populaires-cards">
                     <a href="#">
@@ -326,10 +340,10 @@
                 </div>
             </section>
         </main>
-        <footer>
+        <footer class="footer">
             <ul>
-                <li>
-                    <p>A Propos</p>
+                <li class="">
+                    <h3 class="card-title">A Propos</h3>
                 </li>
                 <li>
                     <a href="#">Fonctionnement du site</a>
@@ -343,7 +357,7 @@
             </ul>
             <ul>
                 <li>
-                    <p>Nos hébergements</p>
+                    <h3 class="card-title">Nos hébergements</h3>
                 </li>
                 <li>
                     <a href="#">Charte qualité</a>
@@ -354,7 +368,7 @@
             </ul>
             <ul>
                 <li>
-                    <p>Assistance</p>
+                    <h3 class="card-title">Assistance</h3>
                 </li>
                 <li>
                     <a href="#">Centre d'aide</a>
