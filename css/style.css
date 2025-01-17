@@ -521,7 +521,8 @@ main {
 
     >.populaires-cards {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+        grid-template-columns: repeat(4, 1fr);
         gap: var(--main-gap);
 
         .card {
@@ -565,6 +566,10 @@ main {
     }
 
     @media screen and (max-width: 767.98px) {
+        .populaires-cards {
+            grid-template-columns: 1fr;
+        }
+
         .card {
             height: auto !important;
         }
