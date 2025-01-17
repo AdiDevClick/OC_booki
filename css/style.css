@@ -28,16 +28,17 @@ html {
     color: var(--main-color);
 }
 
-body {
+/* body {
     display: flex;
     justify-content: center;
-}
+} */
 
 .main-container {
     --max-width-content: 1440px;
     --width-crop: 25px;
 
     display: grid;
+    place-self: center;
     gap: var(--main-gap);
     /* overflow: hidden; */
 
@@ -580,6 +581,7 @@ main {
     }
 }
 
+/****** Footer ***********/
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -647,21 +649,7 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    .hebergements {
-        .populaires-cards img {
-            /* Reactivate to reduce img size */
-            /* height: 124px; */
-            /* max-height: 160px; */
-        }
-    }
-
     .populaires-cards a {
         width: 100%;
     }
-
-    /* .search {
-        .search__filters {
-            flex-direction: column;
-        }
-    } */
 }
