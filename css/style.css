@@ -265,8 +265,11 @@ main {
                 color: white;
                 font-weight: var(--title-fweigth);
                 font-size: var(--common-text-fs);
+                transition: scale 0.3s ease;
 
-
+                &:hover {
+                    scale: 1.02;
+                }
             }
 
             button.search-icon {
