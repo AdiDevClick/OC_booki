@@ -1,8 +1,3 @@
-# Ajout de VITE
-
-`npm install`
-
-
 ## Questions
     Doit-on laisser un dézoom complet ou bien rajouter un height:100vh
     sur le container ce qui va strech le contenu et laisser bcp de vide mais scale ?
