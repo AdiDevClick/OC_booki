@@ -509,6 +509,7 @@ footer ul {
         flex-direction: column;
     }
 
+    /* POPULAIRE ET HEBERGEMENT TABLETTE */
     .hebergements-and-populaires {
         flex-direction: column;
     }
