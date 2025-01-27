@@ -5,3 +5,8 @@
     Les images sont plutôt étriquées en mode mobile, ne devrait-on pas laisser le conteneur s'ajuster ? (ligne 473)
 
     Erreurs grammaticale W3C validator ?
+
+
+    modifier font-size filter
+    baisser le gap du filter
+    taille du pointeur de "map" -  zone grise autour de l'icône de localisation
