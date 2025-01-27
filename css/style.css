@@ -179,6 +179,7 @@ main {
     width: 50px;
     border-radius: var(--padding-size) 0 0 var(--padding-size);
     background-color: var(--main-bg-color);
+    padding: 0 20px;
 }
 
 .search .search__form .form__input .input__icon i {
@@ -607,6 +608,8 @@ footer ul {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
         place-content: center;
+        gap: 10px;
+        row-gap: 15px;
     }
 
     .search .search__filters .filters__list li {
@@ -617,12 +620,20 @@ footer ul {
 
     .search .search__filters .filters__list li button {
         justify-content: start;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         width: 100%;
+        font-size: 14px;
+        padding: 0 10px;
+        font-weight: 700;
     }
 
     .search .search__form .form__input {
         width: 100%;
+    }
+
+    .search .search__form .form__input input,
+    .search .search__form .form__input input::placeholder {
+        font-size: unset;
     }
 
     .search .search__form .form__input button {
@@ -658,6 +669,10 @@ footer ul {
         flex-direction: column-reverse !important;
     }
 
+    .hebergements-and-populaires .populaires {
+        margin-top: unset;
+    }
+
     /* SECTION && ACTIVITES MOBILE */
     .hebergements-and-populaires section,
     .activites {
@@ -668,19 +683,16 @@ footer ul {
     .hebergements {
         background-color: unset !important;
         /* padding: 20px; */
-        /* Reactivate to reduce img size */
+    }
 
-        /* .populaires-cards img {
-            height: 124px;
-            max-height: 160px;
-        } */
+    .hebergements .populaires-cards img {
+        height: 124px;
+        max-height: 160px;
     }
 
     .hebergements .populaires-cards {
         gap: 15px;
     }
-
-
 
     .hebergements,
     .populaires {
