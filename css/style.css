@@ -240,11 +240,11 @@ main {
     color: white;
     font-weight: var(--title-fweigth);
     font-size: var(--common-text-fs);
-    transition: scale 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .search .search__form .form__input button:hover {
-    scale: 1.02;
+    transform: scale(1.02);
 }
 
 .search .search__filters {
