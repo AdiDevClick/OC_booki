@@ -40,7 +40,8 @@ body {
 
 .main-container {
     --max-width-content: 1440px;
-    --width-crop: 25px;
+    --width-crop: 40px;
+    /* --width-crop: 25px; */
 
     display: grid;
     place-self: center;
@@ -51,7 +52,7 @@ body {
     /* max-width: 1440px; */
     /* padding: 0 50px; */
     /* box-sizing: border-box; */
-    width: min(var(--max-width-content), 100%, calc(100% - (var(--width-crop) * 2)));
+    width: min(var(--max-width-content), calc(100% - (var(--width-crop) * 2)));
 }
 
 a {
@@ -511,11 +512,11 @@ footer ul {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
+/* @media (min-width: 769px) and (max-width: 1024px) {
     body {
         padding: 0 25px;
     }
-}
+} */
 
 @media (max-width: 1024px) {
 
