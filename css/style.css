@@ -180,12 +180,17 @@ main {
     border-radius: var(--padding-size) 0 0 var(--padding-size);
     background-color: var(--main-bg-color);
     padding: 0 20px;
+    position: relative;
+    min-width: 50px
 }
 
 .search .search__form .form__input .input__icon i {
     inset: 0;
-    margin-inline: auto;
+    /* margin-inline: auto; */
     color: var(--location-dot-color);
+    position: absolute;
+    text-align: center;
+    align-content: center;
 }
 
 .search .search__form .form__input label {
@@ -291,6 +296,10 @@ main {
 
 .search .search__filters .filters__list button:hover {
     background-color: var(--filter-bg-color);
+}
+
+.search .search__filters .filters__list button i {
+    font-size: 20px;
 }
 
 .search .search__title {
@@ -630,6 +639,7 @@ footer ul {
         font-size: 14px;
         padding: 0 10px;
         font-weight: 700;
+        gap: 5px;
     }
 
     .search .search__form .form__input {
